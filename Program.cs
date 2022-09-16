@@ -20,3 +20,13 @@ else
 {
   arrayOfStrings = new string[]  {"hello", "2", "world", ":-)"};
 }
+
+int lengthLimit = 3;
+
+int numbersItems = CheckArray(arrayOfStrings, lengthLimit);
+
+string[] newArrayOfStrings = new string[numbersItems];
+
+FillNewArray(arrayOfStrings, newArrayOfStrings, lengthLimit);
+
+Console.WriteLine($"{PrintArray(newArrayOfStrings)}");
